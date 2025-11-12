@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======== stream css overrides ======== */
+.str-video__call-stats {
+  max-width: 500px;
+  position: relative;
+}
+
+.str-video__speaker-layout__wrapper {
+  max-height: 700px;
+}
+
+.str-video__participant-details {
+  color: white;
+}
+
+.str-video__menu-container {
+  color: white;
+}
+
+.str-video__notification {
+  color: white;
+}
+
+.str-video__participant-list {
+  background-color: #1c1f2e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+}
+
+.str-video__call-controls__button {
+  height: 40px;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.glassmorphism2 {
+  background: rgba(18, 17, 17, 0.25);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ==== clerk class override ===== */
+
+.cl-userButtonPopoverActionButtonIcon {
+  color: white;
+}
+
+.cl-logoBox {
+  height: 40px;
+}
+.cl-dividerLine {
+  background: #252a41;
+  height: 2px;
+}
+
+.cl-socialButtonsIconButton {
+  border: 3px solid #565761;
+}
+
+.cl-internal-wkkub3 {
+  color: white;
+}
+.cl-userButtonPopoverActionButton {
+  color: white;
+}
+
+/* =============================== */
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+}
+
+/* animation */
+
+.show-block {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  animation: show 0.7s forwards linear;
+}
+
+.str-chat__message--me {
+  background-color: #368CE7 !important;
+  color: white !important;
+  border-radius: 12px !important;
+}
+
+.str-chat__message {
+  background-color: #F5F7FA !important;
+  color: #333333 !important;
+  border-radius: 12px !important;
+}
+
+@keyframes show {
+  0% {
+    animation-timing-function: ease-in;
+    width: 0%;
+  }
+
+  100% {
+    animation-timing-function: ease-in;
+    width: 100%;
+  }
+}
+
+.custom-datepicker .react-datepicker {
+  background-color: #1C1F2E;   /* dark blue background */
+  color: #F1F1F3;              /* light text */
+  border-radius: 12px;
+  border: 1px solid #1E2757;
+}
+
+.custom-datepicker .react-datepicker__header {
+  background-color: #1C1F2E;   /* header blue */
+  color: #F1F1F3;
+  border-bottom: none;
+}
+
+.custom-datepicker .react-datepicker__day,
+.custom-datepicker .react-datepicker__time-list-item {
+  background-color: #1C1F2E; 
+  color: #F1F1F3;
+}
+
+.custom-datepicker .react-datepicker__day--selected,
+.custom-datepicker .react-datepicker__time-list-item--selected {
+  background-color: #830EF9; 
+  color: white;
+}
+
+/* Change month/year header text color */
+.react-datepicker__current-month {
+  color: whitesmoke!important; 
+  font-weight: bold; 
+}
+
+/* Change weekday (Mon, Tue, Wed...) text color */
+.react-datepicker__day-name {
+  color: whitesmoke !important; 
+  font-weight: 600; 
+}
+
+/* Time list container */
+.react-datepicker__time-list {
+  background-color: #1E1E2F !important; /* dark bg example */
+  color: white;
+  border: none;
+}
+
+.react-datepicker__time-list-item {
+  color: #F1F1F3 !important;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: #830EF9 !important; 
+  color: #fff !important; 
+}
+
+.react-datepicker__time-list-item:hover {
+  background-color: #830EF9 !important; 
+  color: white !important; 
+}
+
+/* Time header (*/
+.react-datepicker .react-datepicker__time-container .react-datepicker__header .react-datepicker-time__header {
+  background-color: #1C1F2E !important; 
+  color: #ffffff !important;            
+  border-bottom: none !important;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: capitalize;           
+}
+
+
